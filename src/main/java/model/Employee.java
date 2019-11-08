@@ -114,15 +114,13 @@ public class Employee {
 		Employee_salary = employee_salary;
 	}
 
-
-
-
-
 @Override
 	public String toString() {
 		return "Employee [Employee_name=" + Employee_name + ", Employee_address=" + Employee_address
 				+ ", Employee_designation=" + Employee_designation + ", Employee_department=" + Employee_department
 				+ ", Department=" + Department + "]";
 	}
+
+
 	
 }

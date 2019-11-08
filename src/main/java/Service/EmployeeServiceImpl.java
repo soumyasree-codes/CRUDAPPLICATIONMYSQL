@@ -23,7 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	EmployeeRepository employeeRepository;
 	
 	@Override
-@Transactional
+	@Transactional
 	public void addEmployee(Employee employee) {
 		employeeRepository.save(employee);
 		// TODO Auto-generated method stub

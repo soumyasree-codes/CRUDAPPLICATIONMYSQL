@@ -36,6 +36,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
 		<dependency>
    			 <groupId>org.springframework.boot</groupId>
@@ -54,17 +55,32 @@
     <artifactId>spring-boot-autoconfigure</artifactId>
     <version>2.1.4.RELEASE</version><!--$NO-MVN-MAN-VER$-->
 </dependency>
-		
+	
 	<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>1.4.0.RELEASE</version><!--$NO-MVN-MAN-VER$-->
         </dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+           
+		 <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>4.2.2.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+        </dependency>
+        
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.0.3.Final</version><!--$NO-MVN-MAN-VER$-->
+        </dependency>
+        
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+    		<groupId>mysql</groupId>
+   			 <artifactId>mysql-connector-java</artifactId>
+    		<version>5.1.34</version><!--$NO-MVN-MAN-VER$-->
+	</dependency>
+			
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -99,11 +115,6 @@
     			<artifactId>hibernate-core</artifactId>
     			<version>5.3.6.Final</version><!--$NO-MVN-MAN-VER$-->
 			</dependency>
-			<dependency>
-    			<groupId>org.hibernate</groupId>
-    			<artifactId>hibernate-entitymanager</artifactId>
-   	 			<version>5.3.6.Final</version><!--$NO-MVN-MAN-VER$-->
-			</dependency>
 			
 		<dependency>
         		<groupId>javax.xml.bind</groupId>
@@ -122,8 +133,14 @@
    				<artifactId>commons-configuration</artifactId>
    				<version>1.9</version>
 	</dependency>
-	</dependencies>
+	
 
+	
+	
+	
+	</dependencies>
+	
+           
 	<build>
 		<plugins>
 			<plugin>
